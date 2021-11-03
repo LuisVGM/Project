@@ -1,0 +1,1 @@
+<?php header("Location: ". getenv('HTTP_REFERER')); ?>

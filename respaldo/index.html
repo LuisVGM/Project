@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Projects</title>
+</head>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="css/blog.rtl.css" rel="stylesheet">
+<style>
+  .fondo{
+    border-radius:10px;
+    height: 30rem;
+    background: url(fondos/blog30.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    margin-block-end: 2%;
+  }
+  
+  .opciones{
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+    margin-block-end: 5%;
+  }
+  .title{
+    position: relative;
+    margin-top: 1%;
+    margin-block-end: 18%;
+    
+  }
+  .descripcion{
+    width: 80%;
+    position: relative;
+    margin-block-end: 5%;
+    text-align: center;
+  }
+  .btn-inicio{
+    border-radius: 20px;
+    background-color: #005F40;
+    text-decoration: none;
+    padding: 6px 3% 6px 3%;
+    margin-right: 2%;
+  }
+  .btn-registro{
+    border-radius: 20px;
+    border: 1px solid #353b40;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 6px 3% 6px 3%;
+  }
+  #tope{
+    margin-top: 2%;
+  }
+  li {
+	  margin: 0px;
+	  padding: 0px;
+    list-style: none;
+	}
+  ul {
+	  margin: 0px;
+	  padding: 0px;
+  }
+  .distancia{
+    margin-top: 5%;
+    margin-left: 100%;
+    float: right;
+  }
+  .tamaño{
+    width: 60px;
+  }
+  .btn-inicio:hover{
+    background-color: #06704d;
+  }
+  .btn-registro:hover{
+    background-color: #353b40;
+  }
+  @media screen and (max-width: 900px){
+    .fondo{
+      height: 35rem;
+    }
+    #tope{
+      margin-top: 10%;
+    }
+    #primero{
+      margin-block-end: 2%;
+    }
+    #segundo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-block-end: 2%;
+    }
+    .descripcion{
+      width: 90%;
+    }
+    .distancia{
+      margin-right: 5%;
+      margin-left: 0px;
+      margin-top: 0px;
+      float: none;
+    }
+    .tamaño{
+      width: 50px;
+    }
+    .btn-registro{
+      background-color: #353b40;
+    }
+    .btn-registro:hover{
+    background-color: #404448;
+  }
+  }
+  @media screen and (max-width: 1000px){}
+  @media screen and (max-width: 1050px){}
+</style>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #005F40!important; position: absolute;">
+    <div class="container" style="background-color: #005F40!important">
+      <img src="imag/logo.jpeg" alt="" width="60" height="60">
+      <a class="navbar-brand" href="#">University Projects</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" type="button" data-toggle="modal" data-target="#creditos">Acerca de</a>
+          </li>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation -->
+  
+  <div class="container" id="tope">
+    <div class="fondo">
+      <!-- ENCABEZADO -->
+    <div class="title">
+      <h1 class="text-center text-white" style="font-family: Helvetica; font-weight:bold;">Bienvenido a University Projects</h1>
+    </div><center>
+      <!-- ASUNTO -->
+    <div class="descripcion">
+      <h5 class="text-white">
+        University Projects es una herramienta web creado por alumnos de la Universidad Tecnologica del Sureste de Veracruz, que permiten a la 
+        comunidad estudiantil de dicha institución comunicarse entre ellos con el fin de desarrollar PROYECTOS. El objetivo es mejorar la 
+        comunicación que hay entre los alumnos de la UTSV.
+      </h5>      
+    </div></center>
+    <!-- BOTONERA -->
+    <div class="opciones">
+      <center>
+        <a href="diseño/login.html" class="btn-inicio" style="color: white; text-decoration: none;">Iniciar Sesión</a>
+        <a href="diseño/tipoUsuario.html" class="btn-registro" style="color: white; text-decoration: none;">Registrate</a>
+      </center>
+    </div>
+    </div>
+    
+      <!-- COLUMNAS -->
+    <div class="row" style="margin-block-end: 2%;">
+      <!-- RESEÑA -->
+      <div class="col-md-10" id="primero">
+        <h2 class="text-center">¿Qué es lo que puedes hacer?</h2>
+        <h5>En esta herramienta web, puedes:</h5>
+        <ul>
+          <li>Entrar al foro y compartir tus ideas.</li>
+          <li>Enviar solicitudes de trabajo, para unirte a un equipo de trabajo.</li>
+          <li>Contactar con profesores de la institución.</li>
+          <li>Personalizar tu Perfil</li>
+        </ul>
+      </div>
+      <!-- EXTRA -->
+      <div class="col-md-2" id="segundo">
+        <a href="" class="distancia"><img src="fondos/facebook.svg" alt="" class=" tamaño"></a>
+        <a href="" class="distancia"><img src="fondos/gmail.svg" alt="" class="tamaño"></a>
+        <a href="" class="distancia"><img src="fondos/gorjeo.svg" alt="" class="tamaño"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- creditos -->
+  <div class="modal fade" tabindex="-1" id="creditos">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h4 class="text-center">Créditos</h4>
+
+        </div>
+
+        <div class="modal-body">
+
+        <h4 style="font-family: Helvetica;">Dirigido a</h4>
+        <small>La Universidad Tecnológica del Sureste de Veracruz</small>
+        <h4 style="font-family: Helvetica;">Desarrolladores</h4>
+        <strong>Página Web</strong><br>
+        <small>Luis Valentin Gomez Morales
+          <a href="https://web.facebook.com/vale.gomz.7/"><img src="fondos/facebook.svg" alt="" width="20px" style="float: right; margin-left: 10px;"></a>
+          <a href=""><img src="fondos/gmail.svg" alt="" width="20px" style="float: right; margin-left: 10px;"></a>
+        </small>
+        </div>
+
+      </div>
+
+    </div> 
+
+  </div>
+  <!-- /creditos-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

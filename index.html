@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+  *{
+    scroll-behavior: smooth;
+  }
+  .cuerpoP{
+    padding-top: 0;
+    margin-top: 0;
+  }
+  #subir{
+    position: fixed;
+    bottom: 5vh;
+    right: -5%;
+    transition: right 1s;
+  }
+  #subir a{
+    background-position: center center;
+  }
+  #subir:hover{
+    padding: 1vh 1vh;
+    border-radius: 50%;
+    background: rgba(12, 11, 11, 0.6);
+  }
+  .fondoBody{
+    background-position: 100% 50%;
+    background-image: url(https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    height: 100vh;
+    background-position: center center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  position: relative;
+	  background-attachment: fixed;
+  }
+  .fondoBody::before{
+    content:'';
+	  position: absolute;
+    top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background-color: rgba(0,0,0,0.6);
+  }
+  #menu{
+    position: relative;
+    /*width: 100%;*/
+  }
+  #menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #menu li {
+    display: inline-block;
+    font-size: 2.5vh;
+  }
+  #menu li:hover{
+    opacity: 1;
+  }
+  #menu ul li a {
+    color: #E2D9D7;
+    padding: 3vh;
+    display: block;
+    text-decoration: none;
+    opacity: 1;
+  }
+  #menu ul li a:hover {
+    color: white;
+    opacity: 1;
+    background: rgba(242, 216, 216, 0.1);
+  }
+  .item-r{
+    float: right;
+  }
+  .textImg{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 25vh;
+    color: white;
+  }
+  .titulo{
+    font-size: 10vh;
+    margin: 0;
+  }
+  .subtitle{
+    font-size: 5vh;
+    margin: 0;
+  }
+  .textDes{
+    margin: 5%;
+    width: 90vh;
+    font-size: 3vh;
+    letter-spacing: 2%;
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .contenedor{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imag{
+    background-image: url(imag/unnamed.png);
+    background-size: cover;
+    width: 90vh;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+  .info{
+    margin-left: 3vh;
+    width: 90vh;
+  }
+  .funcion{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .social{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: 3vh;
+    width: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .social a img{
+    width: 8vh;
+    
+  }
+  .redes{
+    width: 8vh;
+    height: 8vh;
+    background-size: cover;
+  }
+  /*#menu ul .visible{
+      display:block;
+  }*/
+  @media screen and (max-width: 1000px){
+    .textImg{
+      padding-top: 15vh;
+      font-size: 20px;
+    }
+    .textDes{
+      width: 70%;
+      font-size: 4vh;
+    }
+    #menu ul li a div{
+      font-size: 4vh;
+    }
+    .imag{
+      width: 80vh;
+      height: 80vh;
+      background-position: center center;
+      align-content: center;
+      /*background-size: 100%;*/
+    }
+    .info{
+      width: 90vh;
+    }
+    .social{
+      padding: 0;
+      margin-top: 2%;
+      margin-left: 0;
+      width: 100%;
+      justify-content: center;
+    }
+    .social a{
+      padding-left: 10vh;
+    }
+    .funcion p{
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .textImg{
+      padding-top: 8%;
+      padding-left: 1vh;
+      padding-right: 1vh;
+      font-size: 20px;
+    }
+    .item-r{
+      float: none;
+    }
+    .textDes{
+      width: 80%;
+      font-size: 3vh;
+    }
+    #menu ul .visible{
+      /*visibility: hidden;*/
+      display: none;
+    }
+    .imag{
+      /*width: 80vh;*/
+      height: 50vh;
+      background-position: center center;
+      align-content: center;
+      /*background-size: 100%;*/
+    }
+    .info{
+      width: 90vh;
+      margin-left: 1vh;
+      margin-right: 1vh;
+    }
+    .social{
+      padding-bottom: 0;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      width: 100%;
+      justify-content: center;
+    }
+    .social a{
+      padding-left: 2vh;
+    }
+    .funcion p{
+      width: 90%;
+    }
+    #menu ul li a div{
+      font-size: 2.1vh;
+    }
+    #menu{
+      text-align: right;
+    }
+  }
+</style>
+<body style="padding:0; margin: 0;">
+
+  <div class="cuerpoP">
+    <div class="fondoBody" id="fondoBody">
+      <!-- MENU -->
+      <div id="menu">
+        <ul>
+          <li class="visible"><a href="index.html"><div>University Projects</div></a></li>
+          <li class="item-r"><a href="diseño/login.html"><div>Iniciar Sesión</div></a></li>
+          <li class="item-r"><a href="diseño/tipoUsuario.html"><div>Registro</div></a></li>
+        </ul>
+      </div>
+      <!-- /MENU -->
+      <!-- TEXTO CENTRO -->
+      <center>
+        <div class="textImg">
+          <h1 class="titulo">University Projects</h1>
+          <div class="textDes">
+            <p>University Projects es una herramienta web creado por alumnos de la Universidad Tecnologica del Sureste de Veracruz, 
+              que permiten a la comunidad estudiantil de dicha institución comunicarse entre ellos con el fin de desarrollar PROYECTOS. 
+              El objetivo es mejorar la comunicación que hay entre los alumnos de la UTSV.</p>
+          </div>
+        </div>
+      </center>
+      <!-- /TEXTO CENTRO -->
+    </div>
+    <!-- CONTENEDOR DE INFORMACION -->
+    <div class="contenedor">
+      <!-- IMAGEN -->
+      <div class="imag">
+        
+      </div>
+      <!-- /IMAGEN -->
+      <!-- INFORMACION -->
+      <div class="info">
+        <h2 class="subtitle">¿Qué es lo que puedes hacer?</h2>
+        <h4>En esta herramienta web, puedes:</h4>
+          <div class="funcion"><img src="fondos/web_black_24dp.svg" alt="">&nbsp;<p>Entrar al foro y compartir tus ideas.</p></div>
+          <div class="funcion"><img src="fondos/group_add_black_24dp.svg" alt="">&nbsp;<p>Enviar solicitudes de trabajo, para unirte a un equipo de trabajo.</p></div>
+          <div class="funcion"><img src="fondos/markunread_black_24dp.svg" alt="">&nbsp;<p>Contactar con profesores de la institución</p></div>
+          <div class="funcion"><img src="fondos/portrait_black_24dp.svg" alt="">&nbsp;<p>Personalizar tu Perfil</p></div>
+      </div>
+      <!-- /INFORMACION -->
+      <div class="social">
+        <a href="#"><div class="redes" style="background-image: url(fondos/facebook.svg);"></div></a>
+        <a href="#"><div class="redes" style="background-image: url(fondos/gmail.svg);"></div></a>
+        <a href="#"><div class="redes" style="background-image: url(fondos/gorjeo.svg);"></div></a>
+        <!--<a href="#"><img src="fondos/facebook.svg" alt=""></a>
+        <a href="#"><img src="fondos/gmail.svg" alt=""></a>
+        <a href="#"><img src="fondos/gorjeo.svg" alt=""></a>-->
+      </div>
+    </div>
+
+    <!--BOTON SUBIR-->
+    <a href="#fondoBody"><img id="subir" src="fondos/arrow_upward_black_24dp.svg" alt=""></a>
+    <!--/BOTON SUBIR-->
+
+    <!-- /CONTENEDOR -->
+  </div>
+
+  <script src="jsPage/boton-arriba.js"></script>
+  
+</body>
+</html>
